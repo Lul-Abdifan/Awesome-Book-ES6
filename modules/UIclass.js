@@ -31,4 +31,8 @@ class Page {
       }
     }
   }
+  document.addEventListener('DOMContentLoaded', Page.retrieveToPage);
+  document.querySelector('.bookLists').addEventListener('click', (e) => {
+    Page.removeFromPage(e.target);
+  });
   export default Page;
