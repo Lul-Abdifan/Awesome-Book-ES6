@@ -1,12 +1,13 @@
-import * as Variables from "./variables.js"
+import * as Variables from './variables.js';
+
 class Navigation {
   static changePage(identifier) {
     switch (identifier) {
       case 'List':
       {
-     Variables.contactSpace.style.display = 'none';
-     Variables.addSpace.style.display = 'none';
-     Variables.storerSpace.style.display = 'block';
+        Variables.contactSpace.style.display = 'none';
+        Variables.addSpace.style.display = 'none';
+        Variables.storerSpace.style.display = 'block';
         break;
       }
 
@@ -35,4 +36,4 @@ Variables.links.forEach((link) => {
     Navigation.changePage(link.textContent);
   };
 });
-export default Navigation
+export default Navigation;

@@ -1,4 +1,3 @@
-
 let books;
 class Collection {
   constructor(title, author) {
@@ -49,4 +48,4 @@ document.querySelector('#add-new-book').addEventListener('submit', (e) => {
   document.querySelector('#author').value = '';
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
-export {Store ,books,Collection};
+export { Store, books, Collection };
