@@ -123,6 +123,10 @@
     text-decoration: none;
     color: red;
   }
+  .date{
+    text-align: end;
+     padding:15px;
+  }
   
   header ul {
     display: flex;
