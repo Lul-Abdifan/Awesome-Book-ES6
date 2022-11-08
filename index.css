@@ -125,7 +125,8 @@
   }
   .date{
     text-align: end;
-     padding:15px;
+     padding:5px;
+     padding-right: 30px;
   }
   
   header ul {

@@ -28,6 +28,7 @@ class Navigation {
     }
   }
 }
+document.addEventListener('DOMContentLoaded', Navigation.changePage('Add new'));
 
 Variables.links.forEach((link) => {
   link.onclick = () => {
