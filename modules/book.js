@@ -1,10 +1,4 @@
-let books;
-class Collection {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
+import books from '../index.js';
 // for storing
 class Store {
   static getBooks() {
@@ -34,18 +28,4 @@ class Store {
   }
 }
 
-document.querySelector('#add-new-book').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const title = document.querySelector('#title').value;
-  const author = document.querySelector('#author').value;
-  // instantiate
-
-  const book = new Collection(title, author);
-  // Add book to list
-  Page.addToPage(book);
-  Store.addBook(book);
-  document.querySelector('#title').value = '';
-  document.querySelector('#author').value = '';
-  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
-});
-export { Store, books, Collection };
+export { Store };

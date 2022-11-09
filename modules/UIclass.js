@@ -1,4 +1,5 @@
 import { Store } from './book.js';
+import books from '../index.js';
 
 class Page {
   static retrieveToPage() {
