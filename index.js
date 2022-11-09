@@ -1,9 +1,5 @@
-
-//to import luxon
 import { DateTime } from './modules/luxon.js';
-//to import navigation modules
 import Navigation from './modules/navigation.js';
-
 
 // to import navigartion class
 
